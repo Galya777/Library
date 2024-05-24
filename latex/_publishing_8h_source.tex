@@ -1,0 +1,34 @@
+\hypertarget{_publishing_8h_source}{}\doxysection{Publishing.\+h}
+\label{_publishing_8h_source}\index{C:/Users/hp/Desktop/Library/Publishing.h@{C:/Users/hp/Desktop/Library/Publishing.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}LibraryItem.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Article.h"{}}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_publishing}{Publishing}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_library_item}{LibraryItem}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_publishing}{Publishing}}(std::string ganre, std::string description, \textcolor{keywordtype}{int} year, \textcolor{keywordtype}{int} rating,  std::string title,\textcolor{keywordtype}{int} month, \mbox{\hyperlink{class_article}{Article}}\& article, \textcolor{keywordtype}{int} isbn=0);}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_publishing}{Publishing}}();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_publishing_a1f1316e17fddacfe353c1e3e0fbd0430}{setTitle}}(std::string title);}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} setMonth(\textcolor{keywordtype}{int} month);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} addContent(\mbox{\hyperlink{class_article}{Article}} article);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{23     std::string \mbox{\hyperlink{class_publishing_a84f28b58cd1d119f3e3b062052b16b14}{getTitle}}();}
+\DoxyCodeLine{24     \textcolor{keyword}{const} \textcolor{keywordtype}{int} getMonth();}
+\DoxyCodeLine{25     std::vector<Article> getContent() \textcolor{keyword}{const};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     }
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} readFromFile(std::ifstream\& file) \textcolor{keyword}{const};}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} writeToFile(std::fstream\& file) \textcolor{keyword}{const};}
+\DoxyCodeLine{30      }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} printBook();}
+\DoxyCodeLine{32 \textcolor{keyword}{private}:}
+\DoxyCodeLine{33     std::string title;}
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} month;}
+\DoxyCodeLine{35     std::vector<Article> content;}
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+
+\end{DoxyCode}

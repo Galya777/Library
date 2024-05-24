@@ -1,0 +1,115 @@
+\hypertarget{class_user}{}\doxysection{User Class Reference}
+\label{class_user}\index{User@{User}}
+
+
+This class represents the user. It has username, password, date of registration and date of last enterance.  
+
+
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+Inheritance diagram for User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_a35ce3229ff19b3cd0e73d19901d4b220}\label{class_user_a35ce3229ff19b3cd0e73d19901d4b220}} 
+{\bfseries User} (std\+::string username, std\+::string password)
+\begin{DoxyCompactList}\small\item\em = Constructors (конструктури) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_a8c80533a5b9e57d3c40ebec3cf7a201f}\label{class_user_a8c80533a5b9e57d3c40ebec3cf7a201f}} 
+void {\bfseries set\+Username} (std\+::string username)
+\begin{DoxyCompactList}\small\item\em = Setters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_a186d574de4e737b3a7c1c1e9eec93b33}\label{class_user_a186d574de4e737b3a7c1c1e9eec93b33}} 
+void {\bfseries set\+Password} (std\+::string password)
+\item 
+\mbox{\Hypertarget{class_user_ad146b81d9bfa6e195bd680b6ee8e28fa}\label{class_user_ad146b81d9bfa6e195bd680b6ee8e28fa}} 
+void {\bfseries set\+Admin} (bool a)
+\item 
+\mbox{\Hypertarget{class_user_a870204a215705c3266032af78925f495}\label{class_user_a870204a215705c3266032af78925f495}} 
+void {\bfseries set\+Date} (std\+::string enrolling\+Date)
+\item 
+\mbox{\Hypertarget{class_user_af6484bf77a88d9c0abade52d25bc874b}\label{class_user_af6484bf77a88d9c0abade52d25bc874b}} 
+void {\bfseries set\+Last\+Date} (std\+::string last\+Seen\+Date)
+\item 
+\mbox{\Hypertarget{class_user_a7079d6aefd9d1b930d837039c1b3e7df}\label{class_user_a7079d6aefd9d1b930d837039c1b3e7df}} 
+std\+::string {\bfseries get\+Username} () const
+\begin{DoxyCompactList}\small\item\em = Getters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_a180e5acdc4b150463652d90d54caa8fc}\label{class_user_a180e5acdc4b150463652d90d54caa8fc}} 
+std\+::string {\bfseries get\+Password} () const
+\item 
+\mbox{\Hypertarget{class_user_a27d71af169a33012aef321827e07b125}\label{class_user_a27d71af169a33012aef321827e07b125}} 
+bool {\bfseries get\+Admin} () const
+\item 
+\mbox{\Hypertarget{class_user_aec522071ee05fd4be401d1a16ae4c80e}\label{class_user_aec522071ee05fd4be401d1a16ae4c80e}} 
+std\+::string {\bfseries get\+Enrolling\+Date} () const
+\item 
+\mbox{\Hypertarget{class_user_a3a353618c8bfec5d54e2cae03fbb797d}\label{class_user_a3a353618c8bfec5d54e2cae03fbb797d}} 
+std\+::string {\bfseries get\+Last\+Seen\+Date} () const
+\item 
+\mbox{\Hypertarget{class_user_a75f5e70a4bf62072a2724326214ae714}\label{class_user_a75f5e70a4bf62072a2724326214ae714}} 
+void {\bfseries Loggout} ()
+\begin{DoxyCompactList}\small\item\em user is logging out (потребител€ излиза от системата) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_a0078c54311f659ec01cf395a97c0da34}\label{class_user_a0078c54311f659ec01cf395a97c0da34}} 
+void {\bfseries read\+From\+File} (std\+::ifstream \&file) const
+\begin{DoxyCompactList}\small\item\em reading form file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_a492bd57ac9ba1ad9dae06263911d7565}\label{class_user_a492bd57ac9ba1ad9dae06263911d7565}} 
+void {\bfseries write\+To\+File} (std\+::fstream \&file) const
+\begin{DoxyCompactList}\small\item\em writing to file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_user_a073baabe82c96ffb5cc502b522dfd8ab}\label{class_user_a073baabe82c96ffb5cc502b522dfd8ab}} 
+void {\bfseries print\+User} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_user_a13aa4b7a1fa851cf773d9026f4fbe5f7}{init}} (std\+::string username, std\+::string password)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_aacbb807e514280f69e00bec7d71f3aee}\label{class_user_aacbb807e514280f69e00bec7d71f3aee}} 
+std\+::string {\bfseries username}
+\item 
+\mbox{\Hypertarget{class_user_ac2f2e75b15e8eb6cbb030fc85a6cd59f}\label{class_user_ac2f2e75b15e8eb6cbb030fc85a6cd59f}} 
+std\+::string {\bfseries password}
+\item 
+\mbox{\Hypertarget{class_user_a3085fbc3093d16a491a1b0683c7e17cb}\label{class_user_a3085fbc3093d16a491a1b0683c7e17cb}} 
+bool {\bfseries admin}
+\item 
+\mbox{\Hypertarget{class_user_acc9dbcc150f9b187645c89ee9f32a4f1}\label{class_user_acc9dbcc150f9b187645c89ee9f32a4f1}} 
+\mbox{\hyperlink{class_date}{Date}} {\bfseries enrolling\+Date}
+\item 
+\mbox{\Hypertarget{class_user_abb89c5173b8f830fccfb4d1a794a0e81}\label{class_user_abb89c5173b8f830fccfb4d1a794a0e81}} 
+\mbox{\hyperlink{class_date}{Date}} {\bfseries last\+Seen\+Date}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_a0acf1a1cbc39d791a09f6b9be7323d5b}\label{class_user_a0acf1a1cbc39d791a09f6b9be7323d5b}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{class_user}{User}} \&other)
+\begin{DoxyCompactList}\small\item\em redefining operator \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the user. It has username, password, date of registration and date of last enterance. 
+
+“ози клас представл€ва потребител€. »ма потребителско име, парола, дата на регистраци€ и дата на последно влизане. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_a13aa4b7a1fa851cf773d9026f4fbe5f7}\label{class_user_a13aa4b7a1fa851cf773d9026f4fbe5f7}} 
+\index{User@{User}!init@{init}}
+\index{init@{init}!User@{User}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void User\+::init (\begin{DoxyParamCaption}\item[{std\+::string}]{username,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+helper function for easy initialization помощна функци€ за инициализиране на данните ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/User.\+h\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/User.\+cpp\end{DoxyCompactItemize}

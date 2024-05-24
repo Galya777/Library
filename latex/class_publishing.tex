@@ -1,0 +1,62 @@
+\hypertarget{class_publishing}{}\doxysection{Publishing Class Reference}
+\label{class_publishing}\index{Publishing@{Publishing}}
+
+
+This class represents a publishing series. It is a child of Library item and contains title, month and articles.  
+
+
+
+
+{\ttfamily \#include $<$Publishing.\+h$>$}
+
+Inheritance diagram for Publishing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_publishing}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_publishing_aed4f86da43ae243aafebd26ad3b2e360}\label{class_publishing_aed4f86da43ae243aafebd26ad3b2e360}} 
+{\bfseries Publishing} (std\+::string ganre, std\+::string description, int year, int rating, std\+::string title, int month, \mbox{\hyperlink{class_article}{Article}} \&article, int isbn=0)
+\begin{DoxyCompactList}\small\item\em = Constructors (конструктури) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_publishing_a1f1316e17fddacfe353c1e3e0fbd0430}\label{class_publishing_a1f1316e17fddacfe353c1e3e0fbd0430}} 
+void {\bfseries set\+Title} (std\+::string title)
+\begin{DoxyCompactList}\small\item\em = Setters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_publishing_af04b28106dfb9513001c4eee804cc35f}\label{class_publishing_af04b28106dfb9513001c4eee804cc35f}} 
+void {\bfseries set\+Month} (int month)
+\item 
+\mbox{\Hypertarget{class_publishing_abfa5d7227d992a0b38299c9f076b78a5}\label{class_publishing_abfa5d7227d992a0b38299c9f076b78a5}} 
+void {\bfseries add\+Content} (\mbox{\hyperlink{class_article}{Article}} article)
+\item 
+\mbox{\Hypertarget{class_publishing_a84f28b58cd1d119f3e3b062052b16b14}\label{class_publishing_a84f28b58cd1d119f3e3b062052b16b14}} 
+std\+::string {\bfseries get\+Title} ()
+\begin{DoxyCompactList}\small\item\em = Getters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_publishing_a3aeae3efe3eceb17be5fd5713899cdc1}\label{class_publishing_a3aeae3efe3eceb17be5fd5713899cdc1}} 
+const int {\bfseries get\+Month} ()
+\item 
+\mbox{\Hypertarget{class_publishing_a9e83b0778bbf9232754bbc1bfa7c7f42}\label{class_publishing_a9e83b0778bbf9232754bbc1bfa7c7f42}} 
+std\+::vector$<$ \mbox{\hyperlink{class_article}{Article}} $>$ {\bfseries get\+Content} () const
+\item 
+\mbox{\Hypertarget{class_publishing_a1d66c54f6953723b8fa7adfdc5086415}\label{class_publishing_a1d66c54f6953723b8fa7adfdc5086415}} 
+void {\bfseries read\+From\+File} (std\+::ifstream \&file) const
+\item 
+\mbox{\Hypertarget{class_publishing_a2d7598ae0ba693a4c3f0173393efd79a}\label{class_publishing_a2d7598ae0ba693a4c3f0173393efd79a}} 
+void {\bfseries write\+To\+File} (std\+::fstream \&file) const
+\item 
+\mbox{\Hypertarget{class_publishing_a5d71d6ecb4fb970605536590d88b0819}\label{class_publishing_a5d71d6ecb4fb970605536590d88b0819}} 
+void {\bfseries print\+Book} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class represents a publishing series. It is a child of Library item and contains title, month and articles. 
+
+Класът представлява печатно издание. Наследник е на \mbox{\hyperlink{class_library_item}{Library\+Item}} и съдържа в допълнение заглавие, месец на издаване и статии. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Publishing.\+h\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Publishing.\+cpp\end{DoxyCompactItemize}

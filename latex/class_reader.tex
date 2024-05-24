@@ -1,0 +1,59 @@
+\hypertarget{class_reader}{}\doxysection{Reader Class Reference}
+\label{class_reader}\index{Reader@{Reader}}
+
+
+This class represents a reader, chield of a user.  
+
+
+
+
+{\ttfamily \#include $<$Reader.\+h$>$}
+
+Inheritance diagram for Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_reader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_reader_a4a9b56d01bbdec10c14d6dc3e6de3bef}\label{class_reader_a4a9b56d01bbdec10c14d6dc3e6de3bef}} 
+{\bfseries Reader} (std\+::string username, std\+::string password)
+\begin{DoxyCompactList}\small\item\em = Constructors (конструктури) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reader_a60155f24d3ca0464572bd9fbc01bcfa0}\label{class_reader_a60155f24d3ca0464572bd9fbc01bcfa0}} 
+std\+::vector$<$ \mbox{\hyperlink{class_library_item}{Library\+Item}} $>$ {\bfseries get\+Books} () const
+\begin{DoxyCompactList}\small\item\em = Getters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reader_a579730f7d773dd5036b44a92fdb633de}\label{class_reader_a579730f7d773dd5036b44a92fdb633de}} 
+std\+::vector$<$ \mbox{\hyperlink{class_date}{Date}} $>$ {\bfseries Getgot\+Date} () const
+\item 
+\mbox{\Hypertarget{class_reader_a190e2bbd7891797a174fc0982628398f}\label{class_reader_a190e2bbd7891797a174fc0982628398f}} 
+std\+::vector$<$ \mbox{\hyperlink{class_date}{Date}} $>$ {\bfseries Getreturn\+Date} () const
+\item 
+\mbox{\Hypertarget{class_reader_a6f261bdca0954f170e8a6a91b3628239}\label{class_reader_a6f261bdca0954f170e8a6a91b3628239}} 
+bool {\bfseries is\+Book\+Gotten} (int id)
+\item 
+\mbox{\Hypertarget{class_reader_ac3c71a0385d94bada4beef8b6e1190f0}\label{class_reader_ac3c71a0385d94bada4beef8b6e1190f0}} 
+bool {\bfseries over\+Due} (\mbox{\hyperlink{class_date}{Date}} today)
+\begin{DoxyCompactList}\small\item\em checks if the user has at least one over\+Due book (проверява дали потребителя има поне една просрочена книга) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reader_af141f82792e146c35972c1eaf22074fc}\label{class_reader_af141f82792e146c35972c1eaf22074fc}} 
+void {\bfseries add\+Book} (\mbox{\hyperlink{class_library_item}{Library\+Item}} \&item, \mbox{\hyperlink{class_date}{Date}} enroll, \mbox{\hyperlink{class_date}{Date}} to\+Return)
+\begin{DoxyCompactList}\small\item\em adds a book in the list of taken books \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reader_acf5a5fd896a34883774b63a206f74ab9}\label{class_reader_acf5a5fd896a34883774b63a206f74ab9}} 
+void {\bfseries return\+The\+Book} (\mbox{\hyperlink{class_library_item}{Library\+Item}} \&item, \mbox{\hyperlink{class_date}{Date}} to\+Return)
+\begin{DoxyCompactList}\small\item\em changes the date of returned book \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reader_a7a0e76a4f13cad1221ec0fd68ee86f2f}\label{class_reader_a7a0e76a4f13cad1221ec0fd68ee86f2f}} 
+bool {\bfseries is\+Returned} (\mbox{\hyperlink{class_library_item}{Library\+Item}} \&item)
+\begin{DoxyCompactList}\small\item\em checks if the book is returned \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class represents a reader, chield of a user. 
+
+Този клас представлява четящ, наследник на user. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Reader.\+h\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Reader.\+cpp\end{DoxyCompactItemize}

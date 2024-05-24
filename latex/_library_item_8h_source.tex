@@ -1,0 +1,43 @@
+\hypertarget{_library_item_8h_source}{}\doxysection{Library\+Item.\+h}
+\label{_library_item_8h_source}\index{C:/Users/hp/Desktop/Library/LibraryItem.h@{C:/Users/hp/Desktop/Library/LibraryItem.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{keyword}{static} \textcolor{keywordtype}{int} THIS\_ID = 0;}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_library_item}{LibraryItem}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_library_item}{LibraryItem}}(std::string ganre, std::string description,\textcolor{keywordtype}{int} year,\textcolor{keywordtype}{int} rating,\textcolor{keywordtype}{int} isbn=0);}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_library_item}{LibraryItem}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_library_item_a612a70ccf1ccd6eddc3faf2dbf241c62}{setGanre}}(std::string ganre);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} setDescription(std::string description);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} setYear(\textcolor{keywordtype}{int} year);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} setRating(\textcolor{keywordtype}{int} rating);}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} setISBN(\textcolor{keywordtype}{int} isbn);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{30     std::string \mbox{\hyperlink{class_library_item_a3e7e2a84103a611a43730f33d83f8e64}{getGanre}}();}
+\DoxyCodeLine{31     std::string getDescription();}
+\DoxyCodeLine{32     \textcolor{keyword}{const} \textcolor{keywordtype}{int} getYear();}
+\DoxyCodeLine{33     \textcolor{keyword}{const} \textcolor{keywordtype}{int} getRating();}
+\DoxyCodeLine{34     \textcolor{keyword}{const} \textcolor{keywordtype}{int} getUnique();}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} getISBN() \textcolor{keyword}{const};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_library_item_a4affa561d75416c8741c2473b0587a36}{writeToFile}}(std::fstream\& file) \textcolor{keyword}{const};}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_library_item_aaeca67f406d34a10a57314e44d1ee977}{printBook}}();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{43     std::string ganre;}
+\DoxyCodeLine{44     std::string description;}
+\DoxyCodeLine{45     \textcolor{keywordtype}{int} year;}
+\DoxyCodeLine{46     \textcolor{keywordtype}{int} rating;}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} uniqueNumber;}
+\DoxyCodeLine{48     \textcolor{keywordtype}{int} isbn;}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+
+\end{DoxyCode}

@@ -1,0 +1,68 @@
+\hypertarget{class_commands}{}\doxysection{Commands Class Reference}
+\label{class_commands}\index{Commands@{Commands}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_commands_aebf65ebee9d669213d57c5d4712d3f0a}\label{class_commands_aebf65ebee9d669213d57c5d4712d3f0a}} 
+{\bfseries Commands} (std\+::string com)
+\begin{DoxyCompactList}\small\item\em = Constructors (конструктури) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a4094e77662a11de6c2790e67a69a7099}\label{class_commands_a4094e77662a11de6c2790e67a69a7099}} 
+void {\bfseries open} ()
+\begin{DoxyCompactList}\small\item\em opens a file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a4a6c32dd685795d57bbde14b4e1d76e9}\label{class_commands_a4a6c32dd685795d57bbde14b4e1d76e9}} 
+void {\bfseries close} ()
+\begin{DoxyCompactList}\small\item\em close a file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a2acf83b6cb295cadf9ccd727990a0b27}\label{class_commands_a2acf83b6cb295cadf9ccd727990a0b27}} 
+void {\bfseries save} ()
+\begin{DoxyCompactList}\small\item\em save to a file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a3c43301d720681f8d1b819c9ae1e6506}\label{class_commands_a3c43301d720681f8d1b819c9ae1e6506}} 
+void {\bfseries save\+As} ()
+\begin{DoxyCompactList}\small\item\em save to new file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a5bc6396d21aa3dd52c9d7a1e0ba9071b}\label{class_commands_a5bc6396d21aa3dd52c9d7a1e0ba9071b}} 
+void {\bfseries help} ()
+\begin{DoxyCompactList}\small\item\em help \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_aa8a56badd8921a917d2a12c53c4630ba}\label{class_commands_aa8a56badd8921a917d2a12c53c4630ba}} 
+bool {\bfseries Login} ()
+\begin{DoxyCompactList}\small\item\em let the user to log in (позволява на потребителя да влезе в системата) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a9b6b830228a3b33f447ca4d036ab14fd}\label{class_commands_a9b6b830228a3b33f447ca4d036ab14fd}} 
+void {\bfseries Add\+Book} (std\+::string title, std\+::string author, std\+::string ganre, std\+::string description, int year, std\+::vector$<$ std\+::string $>$ key\+Words, int rating)
+\begin{DoxyCompactList}\small\item\em adds a book (добавя книга) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a6468514982495d0dea130de2d451dfc8}\label{class_commands_a6468514982495d0dea130de2d451dfc8}} 
+void {\bfseries Add\+Publishing} (std\+::string ganre, std\+::string description, int year, int rating, std\+::string title, int month, \mbox{\hyperlink{class_article}{Article}} \&article, int isbn=0)
+\begin{DoxyCompactList}\small\item\em adds a publishing (добавя печатно издание) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a807f6524b73892b77d1500670ecd988b}\label{class_commands_a807f6524b73892b77d1500670ecd988b}} 
+void {\bfseries Remove} (int id)
+\begin{DoxyCompactList}\small\item\em removes a book by given ID \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_ab19c33d8f7990cd93353d68b1100bf6a}\label{class_commands_ab19c33d8f7990cd93353d68b1100bf6a}} 
+void {\bfseries Info} (int isbn\+\_\+value)
+\begin{DoxyCompactList}\small\item\em prints info by given ISBN (принтира информация за предмет по даден isbn номер) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a451467eb7148dd5399b11f06c87aee02}\label{class_commands_a451467eb7148dd5399b11f06c87aee02}} 
+bool {\bfseries Find\+Book} (std\+::string option, std\+::string options\+\_\+string)
+\begin{DoxyCompactList}\small\item\em finds a book by an option (намира книга по дадена опция) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_aed11a6329063ee6d65d5912b290f8c19}\label{class_commands_aed11a6329063ee6d65d5912b290f8c19}} 
+bool {\bfseries Find\+Publishing} (std\+::string option, std\+::string options\+\_\+string)
+\begin{DoxyCompactList}\small\item\em finds a publishing by an option (намира печатно издание по дадена опция) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_ae73eeeda20e63f38200bf913d94e5a5d}\label{class_commands_ae73eeeda20e63f38200bf913d94e5a5d}} 
+bool {\bfseries Find\+User} (std\+::string option, std\+::string options\+\_\+string)
+\begin{DoxyCompactList}\small\item\em finds a user by an option (намира потребител по дадена опция) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a2f35258366b0fbc9f21a3269d27f99d1}\label{class_commands_a2f35258366b0fbc9f21a3269d27f99d1}} 
+void {\bfseries change\+Password} (std\+::string username)
+\begin{DoxyCompactList}\small\item\em changes password of a user (сменя паролата на потребител) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_ab44bcb9830cbc8ecaa66ff89f1465319}\label{class_commands_ab44bcb9830cbc8ecaa66ff89f1465319}} 
+void {\bfseries take\+Book} (int id)
+\begin{DoxyCompactList}\small\item\em let a user take a book (позволява на потребителя да вземе книга) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a040501073738cd6eadd0671e62d8a972}\label{class_commands_a040501073738cd6eadd0671e62d8a972}} 
+void {\bfseries return\+Book} (int id)
+\begin{DoxyCompactList}\small\item\em let user return a book (позволява на потребителя да върне книга) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_a71da6ce7f4ce263ba40c2de198655831}\label{class_commands_a71da6ce7f4ce263ba40c2de198655831}} 
+void {\bfseries remove\+User} (std\+::string username)
+\begin{DoxyCompactList}\small\item\em removes a user (премахва потребител) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_commands_ae1c963fdcee95bcf693ad3f4d955af72}\label{class_commands_ae1c963fdcee95bcf693ad3f4d955af72}} 
+void {\bfseries run} ()
+\begin{DoxyCompactList}\small\item\em function for running the app (функция за стартиране на приложението) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Commands.\+h\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Commands.\+cpp\end{DoxyCompactItemize}

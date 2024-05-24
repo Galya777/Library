@@ -1,0 +1,41 @@
+\hypertarget{_date_8h_source}{}\doxysection{Date.\+h}
+\label{_date_8h_source}\index{C:/Users/hp/Desktop/Library/Date.h@{C:/Users/hp/Desktop/Library/Date.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_date}{Date}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_date}{Date}}();}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_date}{Date}}(std::string str);}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_date}{Date}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} day, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} month, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} year);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} \mbox{\hyperlink{class_date_a2e4dc4249f8cccd40acc5950b42e1339}{get\_day}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_date_acaf0c3ee1b2d36edf4f870ddd8acce08}{set\_day}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} day);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} \mbox{\hyperlink{class_date_a79ebbf3cb46f892604dc79ffc82bcfcc}{get\_month}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_date_ad0a591a557ddde0871389c3d716e6044}{set\_month}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} month);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} \mbox{\hyperlink{class_date_a025aae2b290ba357e049d054085f91e3}{get\_year}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{30     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_date_a6a0f3124e1850cd9f1514ebffcdd0cae}{set\_year}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} year);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{33     std::string \mbox{\hyperlink{class_date_a26bf227e5fe23d1aaf25df0f57b9e4a0}{createString}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_date_a982c0c9098056aa33c5cbc9eba093852}{read}}(std::istream\& istr);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_date_a9c728831f35f27abf3348132a13b7844}{write}}(std::ostream\& ostr);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_date_a3cda588bf2f65b84639303a1aa1105be}{compare}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_date}{Date}}\& other) \textcolor{keyword}{const};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{keyword}{private}:}
+\DoxyCodeLine{43     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} day;}
+\DoxyCodeLine{44     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} month;}
+\DoxyCodeLine{45     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} year;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{bool} isLeapYear();}
+\DoxyCodeLine{48     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} daysInMonth();}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{52 std::istream\& operator>>(std::istream\& istr, \mbox{\hyperlink{class_date}{Date}}\& dt);}
+\DoxyCodeLine{54 std::ostream\& operator<<(std::ostream\& ostr, \textcolor{keyword}{const} \mbox{\hyperlink{class_date}{Date}}\& dt);}
+\DoxyCodeLine{55 }
+
+\end{DoxyCode}

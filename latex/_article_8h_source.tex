@@ -1,0 +1,31 @@
+\hypertarget{_article_8h_source}{}\doxysection{Article.\+h}
+\label{_article_8h_source}\index{C:/Users/hp/Desktop/Library/Article.h@{C:/Users/hp/Desktop/Library/Article.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_article}{Article}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_article}{Article}}(std::string title, std::string author, std::vector<std::string> keyWords);}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_article}{Article}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_article_af4b45f09bcce094755994ce5fd13588b}{setTitle}}(std::string title);}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} setAuthor(std::string author);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} setKeyWords(std::vector<std::string> \textcolor{keyword}{const}\& keywords) \{ this-\/>keyWords = keywords; \}}
+\DoxyCodeLine{23     }
+\DoxyCodeLine{25     std::string \mbox{\hyperlink{class_article_ad20cc553c24a2b5951c09d44aed4e74f}{getTitle}}();}
+\DoxyCodeLine{26     std::string getAuthor();}
+\DoxyCodeLine{27     std::vector<std::string> geKeyWords() \textcolor{keyword}{const};}
+\DoxyCodeLine{28     }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{32     std::string title;}
+\DoxyCodeLine{33     std::string author;}
+\DoxyCodeLine{34     std::vector<std::string> keyWords;}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+
+\end{DoxyCode}

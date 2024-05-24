@@ -1,0 +1,94 @@
+\hypertarget{class_library_item}{}\doxysection{Library\+Item Class Reference}
+\label{class_library_item}\index{LibraryItem@{LibraryItem}}
+
+
+Base class that represents an item in the library It can be book or publishing series like newspapers or magazines.  
+
+
+
+
+{\ttfamily \#include $<$Library\+Item.\+h$>$}
+
+Inheritance diagram for Library\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_library_item}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_library_item_a181aa1d099b32d73bdde2298d3b625be}\label{class_library_item_a181aa1d099b32d73bdde2298d3b625be}} 
+{\bfseries Library\+Item} (std\+::string ganre, std\+::string description, int year, int rating, int isbn=0)
+\begin{DoxyCompactList}\small\item\em = Constructors (конструктури) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_library_item_a612a70ccf1ccd6eddc3faf2dbf241c62}\label{class_library_item_a612a70ccf1ccd6eddc3faf2dbf241c62}} 
+void {\bfseries set\+Ganre} (std\+::string ganre)
+\begin{DoxyCompactList}\small\item\em = Setters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_library_item_a72d2e1a943a5230f56ceb3214f97b46f}\label{class_library_item_a72d2e1a943a5230f56ceb3214f97b46f}} 
+void {\bfseries set\+Description} (std\+::string description)
+\item 
+\mbox{\Hypertarget{class_library_item_aa8bf384b201e972b439fe611ecc620e9}\label{class_library_item_aa8bf384b201e972b439fe611ecc620e9}} 
+void {\bfseries set\+Year} (int year)
+\item 
+\mbox{\Hypertarget{class_library_item_ae0a25a0033800e5d7518d2e8d45ff612}\label{class_library_item_ae0a25a0033800e5d7518d2e8d45ff612}} 
+void {\bfseries set\+Rating} (int rating)
+\item 
+\mbox{\Hypertarget{class_library_item_a9ad6d8b6123d3d13307fef1f4c4b04de}\label{class_library_item_a9ad6d8b6123d3d13307fef1f4c4b04de}} 
+void {\bfseries set\+ISBN} (int isbn)
+\item 
+\mbox{\Hypertarget{class_library_item_a3e7e2a84103a611a43730f33d83f8e64}\label{class_library_item_a3e7e2a84103a611a43730f33d83f8e64}} 
+std\+::string {\bfseries get\+Ganre} ()
+\begin{DoxyCompactList}\small\item\em = Getters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_library_item_a73028a98b173a4f77e0e3ba89199a1f9}\label{class_library_item_a73028a98b173a4f77e0e3ba89199a1f9}} 
+std\+::string {\bfseries get\+Description} ()
+\item 
+\mbox{\Hypertarget{class_library_item_a6568ca0a4e17ff9ce9845d5d1c7327ab}\label{class_library_item_a6568ca0a4e17ff9ce9845d5d1c7327ab}} 
+const int {\bfseries get\+Year} ()
+\item 
+\mbox{\Hypertarget{class_library_item_ab7eaeeb6718271eb553e39ed7368fd31}\label{class_library_item_ab7eaeeb6718271eb553e39ed7368fd31}} 
+const int {\bfseries get\+Rating} ()
+\item 
+\mbox{\Hypertarget{class_library_item_a518d220432c7f985c36a24dfd7c0cc56}\label{class_library_item_a518d220432c7f985c36a24dfd7c0cc56}} 
+const int {\bfseries get\+Unique} ()
+\item 
+\mbox{\Hypertarget{class_library_item_a8f9481322583f0053e6b32f361c2599c}\label{class_library_item_a8f9481322583f0053e6b32f361c2599c}} 
+int {\bfseries get\+ISBN} () const
+\item 
+\mbox{\Hypertarget{class_library_item_a4affa561d75416c8741c2473b0587a36}\label{class_library_item_a4affa561d75416c8741c2473b0587a36}} 
+void {\bfseries write\+To\+File} (std\+::fstream \&file) const
+\begin{DoxyCompactList}\small\item\em writes to file (записва във файл) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_library_item_aaeca67f406d34a10a57314e44d1ee977}\label{class_library_item_aaeca67f406d34a10a57314e44d1ee977}} 
+void {\bfseries print\+Book} ()
+\begin{DoxyCompactList}\small\item\em prints a book or series (принтира книга или печатно издание) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_library_item_adb4ee4022fec9cb82665f43746fa1262}\label{class_library_item_adb4ee4022fec9cb82665f43746fa1262}} 
+std\+::string {\bfseries ganre}
+\item 
+\mbox{\Hypertarget{class_library_item_a3916b248f64f4140d8158dc769c335f5}\label{class_library_item_a3916b248f64f4140d8158dc769c335f5}} 
+std\+::string {\bfseries description}
+\item 
+\mbox{\Hypertarget{class_library_item_aa0fffafc1d57af81852e20e595838d63}\label{class_library_item_aa0fffafc1d57af81852e20e595838d63}} 
+int {\bfseries year}
+\item 
+\mbox{\Hypertarget{class_library_item_addfbe2ddb96ed8448b47d56bd487006e}\label{class_library_item_addfbe2ddb96ed8448b47d56bd487006e}} 
+int {\bfseries rating}
+\item 
+\mbox{\Hypertarget{class_library_item_aa59ab0e45805ad50cf5b982e6beb3503}\label{class_library_item_aa59ab0e45805ad50cf5b982e6beb3503}} 
+int {\bfseries unique\+Number}
+\item 
+\mbox{\Hypertarget{class_library_item_a3ead9090814940c77cc81da6a79da8bd}\label{class_library_item_a3ead9090814940c77cc81da6a79da8bd}} 
+int {\bfseries isbn}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class that represents an item in the library It can be book or publishing series like newspapers or magazines. 
+
+Базов клас, който представлява предмет от библиотеката Може да бъде книга или печатно издание -\/ списания или вестник 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Library\+Item.\+h\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Library\+Item.\+cpp\end{DoxyCompactItemize}

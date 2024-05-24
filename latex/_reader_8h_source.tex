@@ -1,0 +1,37 @@
+\hypertarget{_reader_8h_source}{}\doxysection{Reader.\+h}
+\label{_reader_8h_source}\index{C:/Users/hp/Desktop/Library/Reader.h@{C:/Users/hp/Desktop/Library/Reader.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}LibraryItem.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}User.h"{}}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_reader}{Reader}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_user}{User}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_reader}{Reader}}(std::string username, std::string password);}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_reader}{Reader}}();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{20     std::vector<LibraryItem> \mbox{\hyperlink{class_reader_a60155f24d3ca0464572bd9fbc01bcfa0}{getBooks}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{21     std::vector<Date> GetgotDate() \textcolor{keyword}{const};}
+\DoxyCodeLine{22     std::vector<Date> GetreturnDate() \textcolor{keyword}{const};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{comment}{//checks if a book is in your list }}
+\DoxyCodeLine{25     \textcolor{keywordtype}{bool} isBookGotten(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{27     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_reader_ac3c71a0385d94bada4beef8b6e1190f0}{overDue}}(\mbox{\hyperlink{class_date}{Date}} today);}
+\DoxyCodeLine{28     }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_reader_af141f82792e146c35972c1eaf22074fc}{addBook}}(\mbox{\hyperlink{class_library_item}{LibraryItem}}\& item, \mbox{\hyperlink{class_date}{Date}} enroll, \mbox{\hyperlink{class_date}{Date}} toReturn);}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_reader_acf5a5fd896a34883774b63a206f74ab9}{returnTheBook}}(\mbox{\hyperlink{class_library_item}{LibraryItem}}\& item, \mbox{\hyperlink{class_date}{Date}} toReturn);}
+\DoxyCodeLine{34     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_reader_a7a0e76a4f13cad1221ec0fd68ee86f2f}{isReturned}}(\mbox{\hyperlink{class_library_item}{LibraryItem}}\& item);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{private}:}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} getNumberOfTheBook(\mbox{\hyperlink{class_library_item}{LibraryItem}}\& item);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     std::vector<LibraryItem> list;}
+\DoxyCodeLine{41     std::vector<Date> gotDate;}
+\DoxyCodeLine{42     std::vector<Date> returnDate;}
+\DoxyCodeLine{43     std::vector<bool> returned;}
+\DoxyCodeLine{44 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,48 @@
+\hypertarget{_user_8h_source}{}\doxysection{User.\+h}
+\label{_user_8h_source}\index{C:/Users/hp/Desktop/Library/User.h@{C:/Users/hp/Desktop/Library/User.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Date.h"{}}}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_user}{User}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_user}{User}}(std::string username, std::string password);}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_user}{User}}();}
+\DoxyCodeLine{17     }
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a8c80533a5b9e57d3c40ebec3cf7a201f}{setUsername}}(std::string username);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} setPassword(std::string password);}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} setAdmin(\textcolor{keywordtype}{bool} a);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} setDate(std::string enrollingDate);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} setLastDate(std::string lastSeenDate);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{26     std::string \mbox{\hyperlink{class_user_a7079d6aefd9d1b930d837039c1b3e7df}{getUsername}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27     std::string getPassword() \textcolor{keyword}{const};}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} getAdmin() \textcolor{keyword}{const};}
+\DoxyCodeLine{29     std::string getEnrollingDate() \textcolor{keyword}{const};}
+\DoxyCodeLine{30     std::string getLastSeenDate() \textcolor{keyword}{const};}
+\DoxyCodeLine{31     }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a75f5e70a4bf62072a2724326214ae714}{Loggout}}();}
+\DoxyCodeLine{34     }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{37     \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{class_user_a0acf1a1cbc39d791a09f6b9be7323d5b}{operator<<}}(std::ostream\& out, \textcolor{keyword}{const} \mbox{\hyperlink{class_user}{User}}\& other);}
+\DoxyCodeLine{39      \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a0078c54311f659ec01cf395a97c0da34}{readFromFile}}(std::ifstream\& file) \textcolor{keyword}{const};}
+\DoxyCodeLine{41      \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a492bd57ac9ba1ad9dae06263911d7565}{writeToFile}}(std::fstream\& file) \textcolor{keyword}{const};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43      \textcolor{keywordtype}{void} printUser();}
+\DoxyCodeLine{44     }
+\DoxyCodeLine{45 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a13aa4b7a1fa851cf773d9026f4fbe5f7}{init}}(std::string username, std::string password);}
+\DoxyCodeLine{49     }
+\DoxyCodeLine{50     std::string username;}
+\DoxyCodeLine{51     std::string password;}
+\DoxyCodeLine{52     \textcolor{keywordtype}{bool} admin;}
+\DoxyCodeLine{53     }
+\DoxyCodeLine{54     \mbox{\hyperlink{class_date}{Date}} enrollingDate;}
+\DoxyCodeLine{55     \mbox{\hyperlink{class_date}{Date}} lastSeenDate;}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+
+\end{DoxyCode}

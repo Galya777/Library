@@ -1,0 +1,25 @@
+\hypertarget{_admin_8h_source}{}\doxysection{Admin.\+h}
+\label{_admin_8h_source}\index{C:/Users/hp/Desktop/Library/Admin.h@{C:/Users/hp/Desktop/Library/Admin.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}LibraryItem.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}User.h"{}}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_admin}{Admin}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_user}{User}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_admin}{Admin}}(std::string username, std::string password);}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_admin}{Admin}}();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_admin_a8c896f77244982c77e178b74861429dd}{setEmail}}(std::string email);}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} setDepartment(std::string department);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{22     std::string \mbox{\hyperlink{class_admin_a3e7cb235dc7d4036d77c8daacbdd4a9c}{getEmail}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{23     std::string getDepartment() \textcolor{keyword}{const};}
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25     std::string email;}
+\DoxyCodeLine{26     std::string depatrment;}
+\DoxyCodeLine{27 \};}
+\DoxyCodeLine{28 }
+
+\end{DoxyCode}

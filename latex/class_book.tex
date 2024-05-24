@@ -1,0 +1,66 @@
+\hypertarget{class_book}{}\doxysection{Book Class Reference}
+\label{class_book}\index{Book@{Book}}
+
+
+This class represents a book witch is a child of \mbox{\hyperlink{class_library_item}{Library\+Item}} and \mbox{\hyperlink{class_article}{Article}}.  
+
+
+
+
+{\ttfamily \#include $<$Book.\+h$>$}
+
+Inheritance diagram for Book\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_book}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_book_a1e02288da1b3d222b8c859ec8c69a819}\label{class_book_a1e02288da1b3d222b8c859ec8c69a819}} 
+{\bfseries Book} (std\+::string title, std\+::string author, std\+::string ganre, std\+::string description, int year, std\+::vector$<$ std\+::string $>$ key\+Words, int rating, int isbn=0)
+\begin{DoxyCompactList}\small\item\em = Constructors (конструктури) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_book_a40fee24168c0f432e9676d885e7ef859}\label{class_book_a40fee24168c0f432e9676d885e7ef859}} 
+void {\bfseries read\+From\+File} (std\+::ifstream \&file) const
+\item 
+\mbox{\Hypertarget{class_book_a634661a37c728a5c34a19df3ef42d828}\label{class_book_a634661a37c728a5c34a19df3ef42d828}} 
+void {\bfseries write\+To\+File} (std\+::fstream \&file) const
+\item 
+\mbox{\Hypertarget{class_book_a619e2ab95fdfd559968e09fe6c4e279f}\label{class_book_a619e2ab95fdfd559968e09fe6c4e279f}} 
+void {\bfseries print\+Book} ()
+\begin{DoxyCompactList}\small\item\em prints a book om the console \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{class_book_a55962d3fc34119fc7ff28ba4751bae5f}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_book}{Book}} \&book)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_book_a2f54093b2741ddc95bac3d97af38b46a}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_book}{Book}} \&other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class represents a book witch is a child of \mbox{\hyperlink{class_library_item}{Library\+Item}} and \mbox{\hyperlink{class_article}{Article}}. 
+
+Този клас представлява книга. Наследник е на \mbox{\hyperlink{class_library_item}{Library\+Item}} и \mbox{\hyperlink{class_article}{Article}} 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_book_a2f54093b2741ddc95bac3d97af38b46a}\label{class_book_a2f54093b2741ddc95bac3d97af38b46a}} 
+\index{Book@{Book}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_book}{Book}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Overloading operator \char`\"{}$<$$<$\char`\"{}. It is used for writinf from file Предефиниране на оператор \char`\"{}$<$$<$\char`\"{}. Използва се за записване на книга във файл \mbox{\Hypertarget{class_book_a55962d3fc34119fc7ff28ba4751bae5f}\label{class_book_a55962d3fc34119fc7ff28ba4751bae5f}} 
+\index{Book@{Book}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_book}{Book}} \&}]{book }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Overloading operator \char`\"{}$>$$>$\char`\"{}. It is used for reading from file Предефиниране на оператор \char`\"{}$>$$>$\char`\"{}. Използва се за четене на книга от файл 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Book.\+h\item 
+C\+:/\+Users/hp/\+Desktop/\+Library/Book.\+cpp\end{DoxyCompactItemize}

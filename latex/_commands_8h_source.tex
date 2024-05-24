@@ -1,0 +1,76 @@
+\hypertarget{_commands_8h_source}{}\doxysection{Commands.\+h}
+\label{_commands_8h_source}\index{C:/Users/hp/Desktop/Library/Commands.h@{C:/Users/hp/Desktop/Library/Commands.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Book.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}User.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}LibraryItem.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Article.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Publishing.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Reader.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Admin.h"{}}}
+\DoxyCodeLine{13 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{14 \textcolor{keyword}{const} \textcolor{keywordtype}{int} MAX\_CONTENT = 100;}
+\DoxyCodeLine{15 \textcolor{keyword}{const} \textcolor{keywordtype}{int} MAX\_FILE = 100;}
+\DoxyCodeLine{16 \textcolor{comment}{/*}}
+\DoxyCodeLine{17 \textcolor{comment}{This class represents the engine of the app and contains all commands}}
+\DoxyCodeLine{18 \textcolor{comment}{}}
+\DoxyCodeLine{19 \textcolor{comment}{Този клас представлява "{}двигателя"{} на приложението и съдържа всички поддържани команди}}
+\DoxyCodeLine{20 \textcolor{comment}{*/}}
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_commands}{Commands}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_commands}{Commands}}(std::string com);}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_commands}{Commands}}();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a4094e77662a11de6c2790e67a69a7099}{open}}();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a4a6c32dd685795d57bbde14b4e1d76e9}{close}}();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a2acf83b6cb295cadf9ccd727990a0b27}{save}}();}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a3c43301d720681f8d1b819c9ae1e6506}{saveAs}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a5bc6396d21aa3dd52c9d7a1e0ba9071b}{help}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_commands_aa8a56badd8921a917d2a12c53c4630ba}{Login}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a9b6b830228a3b33f447ca4d036ab14fd}{AddBook}}(std::string title, std::string author, std::string ganre, std::string description, \textcolor{keywordtype}{int} year, std::vector<std::string> keyWords, \textcolor{keywordtype}{int} rating);}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a6468514982495d0dea130de2d451dfc8}{AddPublishing}}(std::string ganre, std::string description, \textcolor{keywordtype}{int} year, \textcolor{keywordtype}{int} rating,  std::string title, \textcolor{keywordtype}{int} month, \mbox{\hyperlink{class_article}{Article}}\& article, \textcolor{keywordtype}{int} isbn=0);}
+\DoxyCodeLine{45     }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a807f6524b73892b77d1500670ecd988b}{Remove}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_ab19c33d8f7990cd93353d68b1100bf6a}{Info}}(\textcolor{keywordtype}{int} isbn\_value);}
+\DoxyCodeLine{52     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_commands_a451467eb7148dd5399b11f06c87aee02}{FindBook}}(std::string option, std::string options\_string);}
+\DoxyCodeLine{54     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_commands_aed11a6329063ee6d65d5912b290f8c19}{FindPublishing}}(std::string option, std::string options\_string);}
+\DoxyCodeLine{56     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_commands_ae73eeeda20e63f38200bf913d94e5a5d}{FindUser}}(std::string option, std::string options\_string);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a2f35258366b0fbc9f21a3269d27f99d1}{changePassword}}(std::string username);}
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_ab44bcb9830cbc8ecaa66ff89f1465319}{takeBook}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a040501073738cd6eadd0671e62d8a972}{returnBook}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_a71da6ce7f4ce263ba40c2de198655831}{removeUser}}(std::string username);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_commands_ae1c963fdcee95bcf693ad3f4d955af72}{run}}();}
+\DoxyCodeLine{70 \textcolor{keyword}{private}:}
+\DoxyCodeLine{72     \textcolor{keywordtype}{bool} isBookTaken(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{74     \textcolor{keywordtype}{bool} isTheBookTakenByYou(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{75     }
+\DoxyCodeLine{76     std::string command;}
+\DoxyCodeLine{77     std::fstream oldFile;}
+\DoxyCodeLine{78     std::ifstream newFile;}
+\DoxyCodeLine{79     \textcolor{keywordtype}{char} file[MAX\_FILE];}
+\DoxyCodeLine{80     std::vector<LibraryItem>items;}
+\DoxyCodeLine{81     std::vector<Book>books;}
+\DoxyCodeLine{82     std::vector<Publishing>serries;}
+\DoxyCodeLine{83     std::vector<User>users;}
+\DoxyCodeLine{84     std::vector<Reader>readers;}
+\DoxyCodeLine{85     std::vector<Admin>admins;}
+\DoxyCodeLine{86     \mbox{\hyperlink{class_date}{Date}} today;}
+\DoxyCodeLine{89     \textcolor{keywordtype}{bool} loggedIn;}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{96     \mbox{\hyperlink{class_user}{User}} user;}
+\DoxyCodeLine{97 \};}
+\DoxyCodeLine{98 }
+
+\end{DoxyCode}

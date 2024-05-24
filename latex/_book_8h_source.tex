@@ -1,0 +1,27 @@
+\hypertarget{_book_8h_source}{}\doxysection{Book.\+h}
+\label{_book_8h_source}\index{C:/Users/hp/Desktop/Library/Book.h@{C:/Users/hp/Desktop/Library/Book.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}LibraryItem.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Article.h"{}}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_book}{Book}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_library_item}{LibraryItem}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_article}{Article}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_book}{Book}}(std::string title, std::string author, std::string ganre, std::string description, \textcolor{keywordtype}{int} year, std::vector<std::string> keyWords, \textcolor{keywordtype}{int} rating, \textcolor{keywordtype}{int} isbn=0);}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_book}{Book}}();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{21     \textcolor{keyword}{friend} std::istream\& \mbox{\hyperlink{class_book_a55962d3fc34119fc7ff28ba4751bae5f}{operator>>}}(std::istream\& in, \mbox{\hyperlink{class_book}{Book}}\& book);}
+\DoxyCodeLine{26     \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{class_book_a2f54093b2741ddc95bac3d97af38b46a}{operator<<}}(std::ostream\& out, \textcolor{keyword}{const} \mbox{\hyperlink{class_book}{Book}}\& other);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28      \textcolor{keywordtype}{void} readFromFile(std::ifstream\& file) \textcolor{keyword}{const};}
+\DoxyCodeLine{29      \textcolor{keywordtype}{void} writeToFile(std::fstream\& file) \textcolor{keyword}{const};}
+\DoxyCodeLine{30     }
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_book_a619e2ab95fdfd559968e09fe6c4e279f}{printBook}}();}
+\DoxyCodeLine{33 \textcolor{keyword}{private}:}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} init(std::string title, std::string author, std::string ganre, std::string description, \textcolor{keywordtype}{int} year, std::vector<std::string> keyWords, \textcolor{keywordtype}{int} rating);}
+\DoxyCodeLine{35     }
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+
+\end{DoxyCode}
